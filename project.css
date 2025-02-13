@@ -1,0 +1,32 @@
+.flex-container{
+    border-style: solid;
+    display: flex;
+    background-color: #A02B93;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+.flex-container > div, .flex-container{
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+    border: solid;
+}
+.flex-container a{
+    margin-right: auto;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid;
+    padding: 10px;
+}
+
+body{
+    background-image: url("backgroundimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
