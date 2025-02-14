@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+
+        <div class="taskbar">
+
+            <a href = "http://127.0.0.1:5500/mainpage.html" id="logo">
+                <img src="Logo.png" alt="This is the Logo" id="Logoimg" height="80px">
+            </a>
+
+            <a href="http://127.0.0.1:5500/mainpage.html" id="signup">
+                Home
+            </a>
+            <a href="http://127.0.0.1:5500/login-signup.html" id = signup>
+                Signup
+            </a>
+            <a href="http://127.0.0.1:5500/login-signup.html" id = signup>
+                Login
+            </a>
+            <div id="Usernamedisplay"> </div>
+        </div>
+
+        <div class="main-text">
+            <label for="Username">Enter Username:</label>
+            <input type="text" id="Username" placeholder="Enter Username">
+            <br>
+            <label for="Password">Enter Password:</label>
+            <input type="text" id="Password" placeholder="Enter Password">
+            <br>
+            <button onclick="getUsername()">Submit</button>
+            <br>
+            <p id="output"></p>
+        </div>
+        <script src="mainjava.js"></script>
+    </body>
+</html>
