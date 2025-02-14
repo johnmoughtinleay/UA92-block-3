@@ -1,27 +1,39 @@
-.flex-container{
+.taskbar{
     border-style: solid;
     display: flex;
     background-color: #A02B93;
     flex-wrap: wrap;
     align-items:center;
     justify-content: flex-end;
-    padding: 10px;
-    gap: 10px;
+    height: 80px;
 }
-.flex-container > div, .flex-container{
+.taskbar > div, .taskbar #signup{
     color: black;
     padding: 20px;
     font-size: 16px;
     border: solid;
+    margin-right: 10px;
 }
-.flex-container a{
+.taskbar a {
     margin-right: auto;
+    padding: 0px;
+    gap: 10px;
 }
-.dropdown {
+.dropdown{
     display: flex;
     align-items: center;
-    gap: 10px;
     border: solid;
+    padding: 10px;
+    margin: 10px;
+
+}
+.main-text{
+    background-color: #3a3a3a;
+    width: 60%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
     padding: 10px;
 }
 
