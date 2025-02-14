@@ -42,3 +42,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#articleholder{
+    columns: 2;
+    background-color: #3a3a3a;
+    color: wheat;
+}
+.article{
+    margin-top: 20px;
+}
