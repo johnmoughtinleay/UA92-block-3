@@ -2,7 +2,7 @@ window.onload = function () {
     console.log("JavaScript is running!"); 
 
     const dropdown = document.getElementById("categories");
-    const paragraphs = document.querySelectorAll(".article");
+    const paragraphs = document.querySelectorAll(".col-md-4");
 
     function updateText() {
         const selectedValue = dropdown.value;
@@ -11,7 +11,27 @@ window.onload = function () {
             p.style.display = p.dataset.category === selectedValue ? "block" : "none";
         });
     }
+    console.log("test")
+
 
     dropdown.addEventListener("change", updateText);
-    updateText();
+    dropdown.addEventListener("click", getUsername)
+    getUsername()
+    updateText()
 };
+
+function getUsername() {
+    console.log("test")
+    let username = document.getElementById("Username").value;
+    let password = document.getElementById("Password").value;
+    let userdisplayname = document.getElementById("userdisplayname");
+        
+    if (username === "Username" && password === "Password") {
+        userdisplayname.innerText = username;
+        userdisplayname.style.display = "block";
+        console.log("logedin")
+    } else {
+        userdisplayname.innerText = "";
+        userdisplayname.style.display = "none";
+    }
+}
