@@ -1,7 +1,7 @@
 .taskbar{
     border-style: solid;
     display: flex;
-    background-color: #A02B93;
+    background-color: #a02b93;
     flex-wrap: wrap;
     align-items:center;
     justify-content: flex-end;
@@ -25,16 +25,16 @@
     border: solid;
     padding: 10px;
     margin: 10px;
-
 }
 .main-text{
     background-color: #3a3a3a;
     width: 60%;
-    color: white;
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
+    border: solid black;
+    color: white;
 }
 
 body{
@@ -45,9 +45,50 @@ body{
 
 #articleholder{
     columns: 2;
-    background-color: #3a3a3a;
-    color: wheat;
+    background-color: #2a2a2a;
+    color: white;
 }
-.article{
+.col-md-6{
     margin-top: 20px;
+    padding-top: 20px;
+    border: solid;
+    width: 90%;
+}
+
+#usernamepasswordlabel{
+    color: white;
+    margin-right: 20px;
+    margin: 10px;
+
+}
+.labelholder{
+    border: solid;
+    margin: 20px;
+    display: inline-block;
+}
+
+.blog-text{
+    background-color: #3a3a3a;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid black;
+    margin: 10px;
+    color: white;
+    min-height: 350px;
+    min-width: 540px;
+}
+
+.rounded{
+    margin-right: 10px;
+}
+
+h4{
+    text-decoration: underline;  /* the a h4 and h4 need to stay seperate bc the colour doesn't work for the links if its not like this*/
+}
+a h4{
+    color: white;
+
 }
