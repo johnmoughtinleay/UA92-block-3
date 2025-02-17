@@ -9,7 +9,7 @@
 }
 .taskbar > div, .taskbar #signup{
     color: black;
-    padding: 20px;
+    padding: 10px;
     font-size: 16px;
     border: solid;
     margin-right: 10px;
@@ -35,6 +35,9 @@
     padding: 10px;
     border: solid black;
     color: white;
+    min-height: 350px;
+    min-width: 500px;
+
 }
 
 body{
@@ -62,7 +65,7 @@ body{
 
 }
 .labelholder{
-    border: solid;
+    border: solid black;
     margin: 20px;
     display: inline-block;
 }
@@ -88,7 +91,7 @@ body{
 h4{
     text-decoration: underline;  /* the a h4 and h4 need to stay seperate bc the colour doesn't work for the links if its not like this*/
 }
+
 a h4{
     color: white;
-
 }
