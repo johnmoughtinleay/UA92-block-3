@@ -13,10 +13,7 @@ window.onload = function () {
     }
     console.log("test")
 
-
     dropdown.addEventListener("change", updateText);
-    dropdown.addEventListener("click", getUsername)
-    getUsername()
     updateText()
 };
 
@@ -52,3 +49,26 @@ function updateHashDisplay() {
 window.addEventListener('hashchange', updateHashDisplay);
 
 updateHashDisplay();
+
+
+
+    function generatepreview() {
+        let previewtext = document.getElementById("bloginput").value;
+        let previewimage = document.getElementById("imageinput").files[0];
+        console.log("Button clicked!");
+
+        document.getElementById("previewtextbox").innerText = previewtext;
+
+        if (previewimage) {
+            let reader = new FileReader();
+
+            reader.onload = function(e) {
+
+                document.getElementById("previewimagecontainer").src = e.target.result;
+            };
+
+            reader.readAsDataURL(previewimage);
+        } else {
+            console.log("No image file selected.");
+        }
+    }
