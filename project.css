@@ -1,71 +1,70 @@
-.taskbar{
+.taskbar{ /*styling for taskbar*/
     border-style: solid;
     display: flex;
     background-color: #a02b93;
-    flex-wrap: wrap;
-    align-items:center;
-    justify-content: flex-end;
+    align-items:center; /*aligns items center vertically*/
+    justify-content: flex-end; /*puts all buttons to the right*/
     height: 80px;
-}
-.taskbar > div, .taskbar .signup{
+} 
+.taskbar > div, .taskbar .signup{ /*styles things within the taskbar*/
     color: black;
     padding: 10px;
     font-size: 16px;
     border: solid;
     margin-right: 10px;
 }
-.taskbar a {
+.taskbar a { /*pushes logo to the left*/
     margin-right: auto;
-    padding: 0px;
-    gap: 10px;
+
 }
 #Logoimg{
     height: 80px;
 }
-.dropdown{
+
+.dropdown{ 
     display: flex;
-    align-items: center;
+    align-items: center; /*aligns it center vertically*/
     border: solid;
     padding: 10px;
     margin: 10px;
 }
 .main-text{
     background-color: #3a3a3a;
-    width: 60%;
+    width: 60%; /* sets the container to take 60% of the width*/
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 20px; /*adds abit mor space on top so it looks less cramp*/
     padding: 10px;
     border: solid black;
-    color: white;
-    min-height: 350px;
+    color: white; 
+    min-height: 350px; /*makes sure the box covers any image which might be put in it*/
     min-width: 500px;
 
 }
 
-body{
+body{ /*sets background image to fill screen */
     background-image: url("backgroundimage.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*stops it tiling the image*/
     background-size: cover;
 }
 
 #articleholder{
-    columns: 2;
+    columns: 2; /*splits the articles into having two columns*/
     background-color: #2a2a2a;
     color: white;
 }
 
 .blogimages{
-    width: 100%;
+    width: 100%; /*makes image fill container width wise*/
 }
 .blogimagesdisplay{
-    width: 27%;
+    width: 27%; /*sets the container to have 27% width*/
 }
 .col-md-6{
     margin-top: 20px;
     padding-top: 20px;
     border: solid;
-    width: 90%;
+    width: 90%; /*leaves a gap either side*/
 }
 
 .usernamepasswordlabel{
@@ -82,20 +81,19 @@ body{
 
 .blog-text{
     background-color: #3a3a3a;
-    width: 60%;
+    width: 60%; 
     text-align: left;
-    margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     border: solid black;
     margin: 10px;
     color: white;
-    min-height: 350px;
+    min-height: 350px; /*ensures the image is smaller than the containers*/
     min-width: 540px;
 }
 
 .rounded{
-    margin-right: 10px;
+    margin-right: 10px; /*adds small gap to the right*/
 }
 
 h4{
@@ -105,6 +103,6 @@ h4{
 a h4{
     color: white;
 }
-#previewimagecontainer{
+#previewimagecontainer{ /*sets width to be bigger than the images*/
     width: 400px;
 }
