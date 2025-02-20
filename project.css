@@ -5,6 +5,9 @@
     align-items:center; /*aligns items center vertically*/
     justify-content: flex-end; /*puts all buttons to the right*/
     height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 } 
 .taskbar > div, .taskbar .signup{ /*styles things within the taskbar*/
     color: black;
@@ -39,7 +42,7 @@
     color: white; 
     min-height: 350px; /*makes sure the box covers any image which might be put in it*/
     min-width: 500px;
-
+    padding-top: 80px;
 }
 
 body{ /*sets background image to fill screen */
@@ -52,6 +55,7 @@ body{ /*sets background image to fill screen */
     columns: 2; /*splits the articles into having two columns*/
     background-color: #2a2a2a;
     color: white;
+    padding-top: 80px;
 }
 
 .blogimages{
@@ -105,4 +109,8 @@ a h4{
 }
 #previewimagecontainer{ /*sets width to be bigger than the images*/
     width: 400px;
+}
+
+#AI1{
+    padding-top: 80px;/*insures taskbar doesn't cover start of blog*/
 }
