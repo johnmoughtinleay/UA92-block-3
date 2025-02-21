@@ -11,29 +11,26 @@ window.onload = function () {
             p.style.display = p.dataset.category === selectedValue ? "block" : "none";
         });
     }
-    console.log("test")
 
     dropdown.addEventListener("change", updateText);
     updateText()
 };
 
 function getUsername() {
-    console.log("test")
-    let username = document.getElementById("Username").value;
+    let username = document.getElementById("Username").value; /*gets entered username and password*/
     let password = document.getElementById("Password").value;
     let userdisplayname = document.getElementById("userdisplayname");
         
-    if (username === "Username" && password === "Password") {
+    if (username === "Username" && password === "Password") { /*checks if username and password are correct*/
         userdisplayname.innerText = username;
         userdisplayname.style.display = "block";
         console.log("logedin")
     } else {
-        userdisplayname.innerText = "";
-        userdisplayname.style.display = "none";
+        userdisplayname.innerText = "not signed in"; /*sets the text within userdisplayname to "notsigned in"*/
     }
 }
 
-function updateHashDisplay() {
+/*function updateHashDisplay() {
     const selectedHash = window.location.hash || 'None';
     const contentDivs = document.querySelectorAll('.content');
     contentDivs.forEach(div => div.style.display = 'none');
@@ -48,7 +45,7 @@ function updateHashDisplay() {
 
 window.addEventListener('hashchange', updateHashDisplay);
 
-updateHashDisplay();
+updateHashDisplay();*/
 
 
 
@@ -72,3 +69,4 @@ updateHashDisplay();
             console.log("No image file selected.");
         }
     }
+
