@@ -80,7 +80,7 @@ body{ /*sets background image to fill screen */
 .labelholder{
     border: solid black;
     margin: 20px;
-    display: inline-block;
+    display: inline-block; /*makes text show on same line*/
 }
 
 .blog-text{
