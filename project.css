@@ -5,11 +5,11 @@
     align-items:center; /*aligns items center vertically*/
     justify-content: flex-end; /*puts all buttons to the right*/
     height: 80px;
-    position: fixed;
+    position: fixed;/*makes the taskbar stay at the top of screen*/
     top: 0;
     width: 100%;
 } 
-.taskbar > div, .taskbar .signup{ /*styles things within the taskbar*/
+.taskbar > div, .taskbar .signup{ /*styles things within the taskbar excluding logo*/
     color: black;
     padding: 10px;
     font-size: 16px;
@@ -113,4 +113,7 @@ a h4{
 
 #AI1{
     padding-top: 80px;/*insures taskbar doesn't cover start of blog*/
+}
+#previewdisplay{
+    padding-top: 10px !important;
 }
