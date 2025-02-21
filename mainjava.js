@@ -30,24 +30,6 @@ function getUsername() {
     }
 }
 
-/*function updateHashDisplay() {
-    const selectedHash = window.location.hash || 'None';
-    const contentDivs = document.querySelectorAll('.content');
-    contentDivs.forEach(div => div.style.display = 'none');
-
-    const hashContent = document.getElementById(selectedHash.slice(1));
-    if (hashContent) {
-        hashContent.style.display = 'block';
-    } else {
-        document.getElementById('none').style.display = 'block';
-    }
-}
-
-window.addEventListener('hashchange', updateHashDisplay);
-
-updateHashDisplay();*/
-
-
 
     function generatepreview() {
         let previewtext = document.getElementById("bloginput").value;
